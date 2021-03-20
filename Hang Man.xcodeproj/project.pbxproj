@@ -15,6 +15,10 @@
 		FE1EDE6C2602E37E00FDE169 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE1EDE6A2602E37E00FDE169 /* LaunchScreen.storyboard */; };
 		FE1EDE772602E37E00FDE169 /* Hang_ManTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1EDE762602E37E00FDE169 /* Hang_ManTests.swift */; };
 		FE1EDE822602E37E00FDE169 /* Hang_ManUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1EDE812602E37E00FDE169 /* Hang_ManUITests.swift */; };
+		FE1EDE932602E70600FDE169 /* StoredVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1EDE922602E70600FDE169 /* StoredVars.swift */; };
+		FE1EDE982602E72400FDE169 /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1EDE972602E72400FDE169 /* WordViewController.swift */; };
+		FE1EDE9D2602E74700FDE169 /* GuessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1EDE9C2602E74700FDE169 /* GuessViewController.swift */; };
+		FE43180226065BF1003D0B75 /* WinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE43180126065BF1003D0B75 /* WinnerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		FE1EDE7D2602E37E00FDE169 /* Hang ManUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hang ManUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE1EDE812602E37E00FDE169 /* Hang_ManUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hang_ManUITests.swift; sourceTree = "<group>"; };
 		FE1EDE832602E37E00FDE169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE1EDE922602E70600FDE169 /* StoredVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredVars.swift; sourceTree = "<group>"; };
+		FE1EDE972602E72400FDE169 /* WordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = "<group>"; };
+		FE1EDE9C2602E74700FDE169 /* GuessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessViewController.swift; sourceTree = "<group>"; };
+		FE43180126065BF1003D0B75 /* WinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +109,8 @@
 			children = (
 				FE1EDE5F2602E37D00FDE169 /* AppDelegate.swift */,
 				FE1EDE612602E37D00FDE169 /* SceneDelegate.swift */,
-				FE1EDE632602E37D00FDE169 /* ViewController.swift */,
+				FE1EDEA22602E77800FDE169 /* controllers */,
+				FE1EDEA12602E75D00FDE169 /* views */,
 				FE1EDE652602E37D00FDE169 /* Main.storyboard */,
 				FE1EDE682602E37E00FDE169 /* Assets.xcassets */,
 				FE1EDE6A2602E37E00FDE169 /* LaunchScreen.storyboard */,
@@ -126,6 +135,25 @@
 				FE1EDE832602E37E00FDE169 /* Info.plist */,
 			);
 			path = "Hang ManUITests";
+			sourceTree = "<group>";
+		};
+		FE1EDEA12602E75D00FDE169 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				FE1EDE632602E37D00FDE169 /* ViewController.swift */,
+				FE1EDE972602E72400FDE169 /* WordViewController.swift */,
+				FE1EDE9C2602E74700FDE169 /* GuessViewController.swift */,
+				FE43180126065BF1003D0B75 /* WinnerViewController.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		FE1EDEA22602E77800FDE169 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FE1EDE922602E70600FDE169 /* StoredVars.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +286,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE1EDE9D2602E74700FDE169 /* GuessViewController.swift in Sources */,
+				FE1EDE932602E70600FDE169 /* StoredVars.swift in Sources */,
 				FE1EDE642602E37D00FDE169 /* ViewController.swift in Sources */,
+				FE1EDE982602E72400FDE169 /* WordViewController.swift in Sources */,
+				FE43180226065BF1003D0B75 /* WinnerViewController.swift in Sources */,
 				FE1EDE602602E37D00FDE169 /* AppDelegate.swift in Sources */,
 				FE1EDE622602E37D00FDE169 /* SceneDelegate.swift in Sources */,
 			);
