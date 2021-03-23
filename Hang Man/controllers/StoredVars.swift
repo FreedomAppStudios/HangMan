@@ -1,6 +1,6 @@
 //  StoredVars.swift
 //  Hang Man
-//  Created by Other user on 3/17/21.
+//  Created by Nick Morris on 3/17/21.
 
 import Foundation
 
