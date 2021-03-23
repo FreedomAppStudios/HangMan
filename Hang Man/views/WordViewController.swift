@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WordViewController: UIViewController {
+class WordViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var playData: UIButton!
     @IBOutlet weak var titleText: UILabel!
@@ -27,17 +27,30 @@ class WordViewController: UIViewController {
             titleText.text = p1Name + " enter a word"
         }
         playData.layer.cornerRadius = 15
+        //Looks for single or multiple taps.
+             let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+            //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+            //tap.cancelsTouchesInView = false
+            view.addGestureRecognizer(tap)
+        self.wordField.delegate = self
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
-    */
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
 
+        //textField code
+
+        wordField.resignFirstResponder()  //if desired
+        performAction()
+        return true
+    }
+
+    func performAction() {
+        if let wordFill = wordField.text {
+            word = wordFill
+        }
+        performSegue(withIdentifier: "goToGuess", sender: self)
+    }
 }

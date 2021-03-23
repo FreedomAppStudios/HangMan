@@ -32,7 +32,7 @@ class WinnerViewController: UIViewController {
             } else {
                 msgLabel.text = "Congrats " + p2Name
             }
-            wordLabel.text = "The word was: " + word
+            wordLabel.text = "The word was: " + word.uppercased()
         }
         else {
             view.backgroundColor = .red
@@ -42,7 +42,7 @@ class WinnerViewController: UIViewController {
             } else {
                 msgLabel.text = "You lost  " + p2Name
             }
-            wordLabel.text = "The word was: " + word
+            wordLabel.text = "The word was: " + word.uppercased()
         }
     }
     
