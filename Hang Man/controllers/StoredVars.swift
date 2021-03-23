@@ -3,7 +3,6 @@
 //  Created by Nick Morris on 3/17/21.
 
 import Foundation
-
 var p1Name = "NA"
 var p2Name = "NA"
 var word = "Nothing"
