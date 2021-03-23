@@ -259,7 +259,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="eby-hp-PJS"/>
         <segue reference="HRU-DI-PRu"/>
     </inferredMetricsTieBreakers>
     <resources>
